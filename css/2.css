@@ -1,0 +1,277 @@
+                header {
+                    /*  background-image: url(https://i.pinimg.com/564x/53/ea/1f/53ea1fa17ae4ae84bd662cd03f67b074.jpg);
+    background-size: 100%;*/
+                    background-image: url('https://i.pinimg.com/564x/53/ea/1f/53ea1fa17ae4ae84bd662cd03f67b074.jpg');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    height: 500px;
+                    box-shadow: 0 8px 3px 3px #777;
+                }
+                
+                .imgpri1 {
+                    width: 250px;
+                    height: 260px;
+                    border-bottom: #990000 5px groove;
+                }
+                
+                h2 {
+                    width: 40%;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 40px;
+                }
+                
+                h2 {
+                    text-align: center;
+                    background-color: rgba(202, 96, 96, 0.1);
+                    background-image: linear-gradient(rgba(226, 99, 99, 0.2), rgba(175, 168, 168, 0.1));
+                    border-radius: 9px;
+                    color: #999;
+                }
+                
+                h4 {
+                    text-align: center;
+                    background-color: #111;
+                    background-image: linear-gradient(#444, #111);
+                    box-shadow: 0 1px 1px #777;
+                    color: #999;
+                    padding: 6px;
+                }
+                
+                .ofertas-item1 {
+                    text-align: center;
+                    background-color: #111;
+                    background-image: linear-gradient(#444, #111);
+                    border-radius: 6px;
+                    box-shadow: 3px 3px 3px #777;
+                    display: flex;
+                    justify-content: space-evenly;
+                    border: 2px groove #777;
+                    width: 600px;
+                    margin: 15px;
+                }
+                
+                .ofertas-item-text1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                
+                .ofertas1 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    color: #999;
+                }
+                
+                .icon1:hover {
+                    background: rgba(0, 0, 0, 0.15);
+                    cursor: pointer;
+                }
+                
+                p {
+                    color: #999;
+                }
+                
+                h3 {
+                    box-shadow: 0 1px 1px #777;
+                }
+                
+                .compra1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    background-color: #111;
+                    background-image: linear-gradient(#444, #111);
+                    box-shadow: 0 1px 1px #777;
+                    width: 90%;
+                }
+                
+                .compra1:hover {
+                    color: #fafafa;
+                    border: #fafafa 1px solid;
+                    border-radius: 15px;
+                    /*background-color: #111;
+   // background-image: linear-gradient(rgb(107, 90, 90), rgb(56, 45, 45));*/
+                    box-shadow: 0 1px 1px #777;
+                    background-color: #990000;
+                    background-image: linear-gradient(#9c1c1c, rgb(14, 1, 1));
+                }
+                
+                a {
+                    text-decoration: none;
+                }
+                
+                .form1 {
+                    border: none;
+                    background-color: transparent;
+                    color: #999;
+                }
+                
+                .form1:hover {
+                    color: #999;
+                    cursor: pointer;
+                    border: 1px #fafafa solid;
+                    border-radius: 10%;
+                }
+                
+                option {
+                    background-color: transparent;
+                }
+                
+                .ofertas-item-text1 h2 {
+                    padding: 4px;
+                }
+                
+                option {
+                    background-color: transparent;
+                }
+                
+                .ofertas-item-text1 h2 {
+                    padding: 4px;
+                }
+                /*responsive*/
+                
+                @media screen and (max-width: 576px) {
+                    .primera {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        height: 120px;
+                    }
+                    .primera img {
+                        width: 280px;
+                        margin-top: 20px;
+                    }
+                    .primera2 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                    }
+                    .primera2 svg {
+                        width: 34px;
+                        height: 34px;
+                    }
+                    .ofertas1 {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                    }
+                    .ofertas-item1 {
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px;
+                    }
+                    .explicamos {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .trabajo {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .video {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .comentario {
+                        width: 300px;
+                    }
+                    .precio {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    /* .footer2 img {
+            display: none;
+        }*/
+                    .a {
+                        grid-area: a;
+                    }
+                    .b {
+                        grid-area: b;
+                    }
+                    .c {
+                        grid-area: c;
+                    }
+                    .d {
+                        grid-area: d;
+                    }
+                    .e {
+                        grid-area: e;
+                    }
+                    .footer1 {
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns: 25% 25% 25% 25%;
+                        grid-template-areas: "a a b b" "c c c c" "d d e e";
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                
+                .spiderman {
+                    background-image: url('https://i.pinimg.com/564x/0b/00/64/0b00647ea6910a1c03e982ac4024c66a.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 450px;
+                    width: 100%;
+                    box-shadow: 0 6px 6px 6px #777;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                /*.titulospiderman {}*/
+                /* .texto1 {
+                    text-align: center;
+                    background-color: #111;
+                    background-image: linear-gradient(#444, #111);
+                    box-shadow: 0 1px 1px #777;
+                    color: #990000;
+                    border-bottom: #990000 5px groove;
+                    padding: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                }*/
+                
+                .texto1 h4 {
+                    font-size: 23px;
+                    color: #fafafa;
+                    border-top: solid 2px #990000;
+                    border-bottom: solid 2px #990000;
+                    border-radius: 4px;
+                }
+                
+                .texto1 span {
+                    color: #990000;
+                }
+                
+                .texto1 h4:hover {
+                    background: black;
+                    border: #fafafa 1px solid;
+                    border-radius: 4px;
+                }
+                
+                .texto1 span:hover {
+                    color: #ec6161;
+                }
+                /* .titulospiderman {
+                    top: 50;
+                    left: 50;
+                } */
+                
+                .ad {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 550px;
+                }
+                
+                .ad h2 {
+                    background-color: #111;
+                    background-image: linear-gradient(#444, #111);
+                    box-shadow: 0 1px 1px #777;
+                    column-gap: 9px;
+                }

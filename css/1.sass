@@ -1,0 +1,106 @@
+
+  
+  
+$bg: #1d1f20;
+$text-color: #d7b94c;
+$caret-color: white;
+$text-length: 16;
+$animation-time: 4s;
+// Center content
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: $bg;
+}
+// Basic style
+h1 {
+  font-family: 'Inconsolata', Consolas, monospace;
+	font-size: 4em;
+	color: $text-color;
+}
+// Typing style
+.typing {
+  position: relative;
+	&::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: $caret-color;
+    background: $bg;
+    animation: typing $animation-time steps($text-length) forwards,
+      caret 1s infinite;
+  }
+}
+// Animation
+@keyframes typing {
+	to { width: 0 }
+}
+@keyframes caret {
+	50% { color: transparent }
+}
+
+
+
+
+
+/*
+
+ $(document).ready(function(){
+  var zindex = 10;
+  
+  $(&quot;div.card&quot;).click(function(e){
+    e.preventDefault();
+
+    var isShowing = false;
+
+    if ($(this).hasClass(&quot;show&quot;)) {
+      isShowing = true
+    }
+
+    if ($(&quot;div.cards&quot;).hasClass(&quot;showing&quot;)) {
+      // a card is already in view
+      $(&quot;div.card.show&quot;)
+        .removeClass(&quot;show&quot;);
+
+      sif (isShowing) {
+        // this card was showing - reset the grid
+        $(&quot;div.cards&quot;)
+          .removeClass(&quot;showing&quot;);
+      } else {
+        // this card isn&#39;t showing - get in with it
+        $(this)
+          .css({zIndex: zindex})
+          .addClass(&quot;show&quot;);
+
+      }
+
+      zindex++;
+
+    } else {
+      // no cards in view
+      $(&quot;div.cards&quot;)
+        .addClass(&quot;showing&quot;);
+      $(this)
+        .css({zIndex:zindex})
+        .addClass(&quot;show&quot;);
+
+      zindex++;
+    }
+    
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
